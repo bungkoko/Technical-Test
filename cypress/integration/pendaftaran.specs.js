@@ -84,7 +84,6 @@ describe("Pendaftaran Testing",()=>{
         const customersim='123456798012345'
         const companyphone = '08120000123456'
 
-        cy.get('#customer_phone').type(customerphone).should('have.value', customerphone.substring(0,13)); 
         cy.get('#customer_mobile').type(customermobile).should('have.value', customerphone.substring(0,13)); 
         cy.get('#customer_ktp').type(customerktp).should('have.value', customerphone.substring(0,16)); 
         cy.get('#customer_sim').type(customersim).should('have.value', customerphone.substring(0,14)); 
